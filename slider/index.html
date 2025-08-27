@@ -101,20 +101,24 @@
 
     /* Buttons styles */
     .buttons button {
-      pointer-events: auto; /* Enable pointer events on buttons */
-      border: 2px solid #333;
-      background-color: rgba(255 255 255 / 0.8);
-      color: #333;
-      cursor: pointer;
-      padding: 13px 18px;
-      border-radius: 50%;
-      font-size: 1.5rem;
-      font-weight: bold;
-      line-height: 1;
-      transition: background-color 0.3s, color 0.3s;
-      outline: none;
-      user-select: none;
-    }
+  pointer-events: auto;
+  width: 60px;                 /* Equal width */
+  height: 60px;                /* Equal height */
+  border: 2px solid #333;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  cursor: pointer;
+  border-radius: 50%;          /* Perfect circle */
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+  display: flex;               /* Center the arrow */
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+  outline: none;
+  user-select: none;
+}
 
     .buttons button:hover {
       background-color: #333;
